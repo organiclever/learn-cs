@@ -1,10 +1,10 @@
 # Computer Science Concepts Learning Repository
 
-Welcome to the Computer Science Concepts Learning Repository! This project is designed to help learners understand fundamental computer science concepts through code examples and explanations.
+Welcome to the Computer Science Concepts Learning Repository! This project is designed to help learners understand fundamental computer science concepts through explanations, pseudocode, and code examples in various programming languages.
 
 ## Introduction
 
-This repository serves as a practical resource for anyone interested in learning or reviewing core computer science concepts. Each folder in this repository represents a different topic or concept, containing code examples and explanations to help reinforce your understanding.
+This repository serves as a practical resource for anyone interested in learning or reviewing core computer science concepts. The main learning material is provided in Markdown format, with additional implementations in various programming languages to reinforce understanding.
 
 ## Topics Covered
 
@@ -15,18 +15,24 @@ This repository serves as a practical resource for anyone interested in learning
 ## Project Structure
 
 - [`contents/`](contents/): Contains subprojects for different topics
+  - [`cs-book/`](contents/cs-book/): **Main resource** - Explanations and pseudocode for CS concepts in Markdown
   - [`cs-ts/`](contents/cs-ts/): Algorithms implemented in TypeScript
   - [`cs-py/`](contents/cs-py/): Algorithms implemented in Python
   - [`cs-go/`](contents/cs-go/): Algorithms implemented in Go
   - [`cs-rust/`](contents/cs-rust/): Algorithms implemented in Rust
   - [`cs-java/`](contents/cs-java/): Algorithms implemented in Java
 
+## How to Use This Repository
+
+1. Start with the [`cs-book/`](contents/cs-book/) directory, which contains the main explanations and pseudocode for CS concepts.
+2. After understanding a concept, you can explore its implementation in different programming languages in the respective directories.
+
 ## Implemented Algorithms
 
-Currently, the following algorithms are implemented:
+Currently, the following algorithms are covered:
 
 - Hello World (example in all languages)
-- Linear Search (implemented in all languages)
+- Linear Search (explained in cs-book and implemented in all languages)
 
 ## Project Requirements
 

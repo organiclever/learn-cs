@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:all",
-    "test:all": "concurrently \"npm run algo-ts:test\" \"npm run algo-py:test\" \"npm run algo-go:test\"",
-    "test:watch": "concurrently \"npm run algo-ts:test:watch\" \"npm run algo-py:test:watch\" \"npm run algo-go:test:watch\"",
+    "test:all": "concurrently \"npm run algo-ts:test\" \"npm run algo-py:test\" \"npm run algo-go:test\" \"npm run algo-rust:test\"",
+    "test:watch": "concurrently \"npm run algo-ts:test:watch\" \"npm run algo-py:test:watch\" \"npm run algo-go:test:watch\" \"npm run algo-rust:test:watch\"",
     "install:all": "npm install && npm run install:algo-ts && npm run install:algo-py",
     "algo-ts:test": "cd contents/algo-ts && npm test",
     "algo-ts:test:watch": "cd contents/algo-ts && npm run test:watch",
@@ -16,6 +16,9 @@
     "algo-py:install": "cd contents/algo-py && python -m venv venv && . venv/bin/activate && pip install -r requirements.txt && deactivate",
     "algo-go:test": "cd contents/algo-go && go test ./...",
     "algo-go:test:watch": "cd contents/algo-go && (find . -name '*.go' | entr -c -s 'go test ./...')",
+    "algo-rust:test": "cd contents/algo-rust && cargo test",
+    "algo-rust:test:watch": "cd contents/algo-rust && (find . -name '*.rs' | entr -c -s 'cargo test')",
+    "format:rust": "find . -name '*.rs' -not -path '*/target/*' | xargs rustfmt",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "husky:pre-push": "husky add .husky/pre-push 'npm test'"
@@ -30,7 +33,8 @@
     "concurrently": "^8.0.1"
   },
   "lint-staged": {
-    "*.{ts,js,md,json}": "prettier --write"
+    "*.{ts,js,md,json}": "prettier --write",
+    "**/*.rs": "npm run format:rust"
   },
   "volta": {
     "node": "20.17.0",

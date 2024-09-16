@@ -18,6 +18,9 @@ yarn-error.log
 /target/
 **/*.rs.bk
 Cargo.lock
+**/target/
+**/*.rs.bk
+**/Cargo.lock
 
 # Clojure
 /target/

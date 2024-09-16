@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:all",
-    "test:all": "npm run cs-ts:test && npm run cs-py:test && npm run cs-go:test && npm run cs-rust:test && npm run cs-java:test",
+    "test:all": "npm run cs-ts:test && npm run cs-py:test && npm run cs-go:test && npm run cs-rust:test && npm run cs-java:test && npm run cs-clj:test",
     "test:watch": "concurrently \"npm run cs-ts:test:watch\" \"npm run cs-py:test:watch\" \"npm run cs-go:test:watch\" \"npm run cs-rust:test:watch\" \"npm run cs-java:test:watch\"",
     "install:all": "npm install && npm run cs-ts:install && npm run cs-py:install && npm run cs-java:install",
     "cs-ts:test": "cd contents/cs-ts && npm test",
@@ -21,6 +21,7 @@
     "cs-java:test": "cd contents/cs-java && mvn test",
     "cs-java:test:watch": "nodemon --watch contents/cs-java/src --ext java --exec \"npm run cs-java:test\"",
     "cs-java:install": "cd contents/cs-java && mvn install",
+    "cs-clj:test": "cd contents/cs-clj && clojure -M:test:run-tests",
     "format:rust": "find . -name '*.rs' -not -path '*/target/*' | xargs rustfmt",
     "format:go": "find . -name '*.go' | xargs gofmt -w",
     "format:java": "prettier --write --parser java --plugin=prettier-plugin-java \"contents/cs-java/**/*.java\"",

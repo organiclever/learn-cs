@@ -1,0 +1,23 @@
+[
+  "^ ",
+  "~:classpath",
+  ["~#set", []],
+  "~:project-hash",
+  "",
+  "~:project-root",
+  "/Users/alami/wkf-repos/organiclever/learn-cs",
+  "~:kondo-config-hash",
+  "98fd032c2be2d6169a2b803e879a34b6f72955191a8e9f5a0fad0519fa92341b",
+  "~:dependency-scheme",
+  "jar",
+  "~:analysis",
+  null,
+  "~:analysis-checksums",
+  ["^ "],
+  "~:project-analysis-type",
+  "~:project-and-full-dependencies",
+  "~:version",
+  12,
+  "~:stubs-generation-namespaces",
+  ["^1", []]
+]

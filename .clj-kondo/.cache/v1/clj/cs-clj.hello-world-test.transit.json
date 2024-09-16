@@ -1,0 +1,21 @@
+[
+  "^ ",
+  "~$hello-test",
+  [
+    "^ ",
+    "~:row",
+    5,
+    "~:col",
+    1,
+    "~:fixed-arities",
+    ["~#set", [0]],
+    "~:name",
+    "^0",
+    "~:ns",
+    "~$cs-clj.hello-world-test",
+    "~:top-ns",
+    "^7"
+  ],
+  "~:filename",
+  "/Users/alami/wkf-repos/organiclever/learn-cs/contents/cs-clj/test/cs_clj/hello_world_test.clj"
+]

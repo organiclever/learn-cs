@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:all",
-    "test:all": "concurrently \"npm run algo-ts:test\" \"npm run algo-py:test\" \"npm run algo-go:test\" \"npm run algo-rust:test\" \"npm run algo-java:test\"",
+    "test:all": "npm run algo-ts:test && npm run algo-py:test && npm run algo-go:test && npm run algo-rust:test && npm run algo-java:test",
     "test:watch": "concurrently \"npm run algo-ts:test:watch\" \"npm run algo-py:test:watch\" \"npm run algo-go:test:watch\" \"npm run algo-rust:test:watch\" \"npm run algo-java:test:watch\"",
     "install:all": "npm install && npm run algo-ts:install && npm run algo-py:install && npm run algo-java:install",
     "algo-ts:test": "cd contents/algo-ts && npm test",

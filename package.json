@@ -23,9 +23,17 @@
     "algo-java:install": "cd contents/algo-java && mvn install",
     "format:rust": "find . -name '*.rs' -not -path '*/target/*' | xargs rustfmt",
     "format:go": "find . -name '*.go' | xargs gofmt -w",
+    "format:java": "prettier --write \"contents/algo-java/**/*.java\"",
+    "format:xml": "prettier --write \"**/*.xml\"",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "husky:pre-push": "husky add .husky/pre-push 'npm test'"
+    "husky:pre-push": "husky add .husky/pre-push 'npm test'",
+    "reset:all": "npm run reset:node && npm run reset:py && npm run reset:java && npm run reset:rust && npm run reset:go && npm run install:all",
+    "reset:node": "rm -rf node_modules package-lock.json && cd contents/algo-ts && rm -rf node_modules package-lock.json",
+    "reset:py": "rm -rf contents/algo-py/venv",
+    "reset:java": "cd contents/algo-java && mvn clean",
+    "reset:rust": "cd contents/algo-rust && cargo clean",
+    "reset:go": "go clean -cache -testcache -modcache"
   },
   "author": "",
   "license": "MIT",
@@ -33,14 +41,17 @@
     "ts-node": "^10.9.2",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.0",
-    "prettier": "^2.8.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-java": "^2.2.0",
     "concurrently": "^8.0.1",
     "nodemon": "^2.0.22"
   },
   "lint-staged": {
     "*.{ts,js,md,json}": "prettier --write",
     "**/*.rs": "npm run format:rust",
-    "**/*.go": "npm run format:go"
+    "**/*.go": "npm run format:go",
+    "**/*.java": "npm run format:java",
+    "**/*.xml": "npm run format:xml"
   },
   "volta": {
     "node": "20.17.0",

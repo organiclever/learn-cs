@@ -19,6 +19,29 @@ This repository serves as a practical resource for anyone interested in learning
   - [`algo-py/`](contents/algo-py/): Algorithms implemented in Python
   - [`algo-go/`](contents/algo-go/): Algorithms implemented in Go
 
+## Project Requirements
+
+To work with this project, you'll need the following installed on your system:
+
+- Volta (for managing Node.js and npm versions)
+- Python 3.7+ (for running Python algorithms and tests)
+- Go 1.16+ (for running Go algorithms and tests)
+- entr (for watching file changes in the Go project)
+
+### Setting up the project
+
+1. Install Volta if you haven't already: https://docs.volta.sh/guide/getting-started
+2. Clone this repository
+3. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
+4. Run `npm run install:all` to set up all subprojects
+
+### Running tests
+
+- To run all tests: `npm test`
+- To watch for changes and run tests automatically: `npm run test:watch`
+
+Note: The Go project's watch functionality requires `entr` to be installed on your system.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

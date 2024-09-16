@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run test:all",
     "test:all": "concurrently \"npm run algo-ts:test\" \"npm run algo-py:test\" \"npm run algo-go:test\"",
-    "test:watch": "concurrently \"npm run algo-ts:test:watch\" \"npm run algo-py:test:watch\"",
+    "test:watch": "concurrently \"npm run algo-ts:test:watch\" \"npm run algo-py:test:watch\" \"npm run algo-go:test:watch\"",
     "install:all": "npm install && npm run install:algo-ts && npm run install:algo-py",
     "algo-ts:test": "cd contents/algo-ts && npm test",
     "algo-ts:test:watch": "cd contents/algo-ts && npm run test:watch",
@@ -15,6 +15,7 @@
     "algo-py:test:watch": "cd contents/algo-py && . venv/bin/activate && pytest-watch && deactivate",
     "algo-py:install": "cd contents/algo-py && python -m venv venv && . venv/bin/activate && pip install -r requirements.txt && deactivate",
     "algo-go:test": "cd contents/algo-go && go test ./...",
+    "algo-go:test:watch": "cd contents/algo-go && (find . -name '*.go' | entr -c -s 'go test ./...')",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "husky:pre-push": "husky add .husky/pre-push 'npm test'"
@@ -30,5 +31,9 @@
   },
   "lint-staged": {
     "*.{ts,js,md,json}": "prettier --write"
+  },
+  "volta": {
+    "node": "20.17.0",
+    "npm": "10.8.3"
   }
 }

@@ -18,3 +18,11 @@ This repository serves as a practical resource for anyone interested in learning
   - `algo-ts/`: Algorithms implemented in TypeScript
   - `algo-py/`: Algorithms implemented in Python
   - `algo-go/`: Algorithms implemented in Go
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.

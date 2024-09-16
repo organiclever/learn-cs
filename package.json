@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:all",
-    "test:all": "concurrently \"npm run test:algo-ts\" \"npm run test:algo-py\" \"npm run test:algo-go\"",
-    "test:watch": "concurrently \"npm run test:watch:algo-ts\" \"npm run test:watch:algo-py\"",
+    "test:all": "concurrently \"npm run algo-ts:test\" \"npm run algo-py:test\" \"npm run algo-go:test\"",
+    "test:watch": "concurrently \"npm run algo-ts:test:watch\" \"npm run algo-py:test:watch\"",
     "install:all": "npm install && npm run install:algo-ts && npm run install:algo-py",
     "algo-ts:test": "cd contents/algo-ts && npm test",
     "algo-ts:test:watch": "cd contents/algo-ts && npm run test:watch",

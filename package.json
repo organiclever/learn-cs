@@ -9,7 +9,8 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "test:watch": "concurrently \"cd contents/algo-ts && npm run test:watch\" \"cd contents/algo-py && . venv/bin/activate && pytest-watch && deactivate\"",
-    "test:all": "concurrently \"cd contents/algo-ts && npm test\" \"cd contents/algo-py && . venv/bin/activate && pytest && deactivate\""
+    "test:all": "concurrently \"cd contents/algo-ts && npm test\" \"cd contents/algo-py && . venv/bin/activate && pytest && deactivate\"",
+    "husky:pre-push": "husky add .husky/pre-push 'npm test'"
   },
   "author": "",
   "license": "MIT",

@@ -14,10 +14,10 @@ This repository serves as a practical resource for anyone interested in learning
 
 ## Project Structure
 
-- `contents/`: Contains subprojects for different topics
-  - `algo-ts/`: Algorithms implemented in TypeScript
-  - `algo-py/`: Algorithms implemented in Python
-  - `algo-go/`: Algorithms implemented in Go
+- [`contents/`](contents/): Contains subprojects for different topics
+  - [`algo-ts/`](contents/algo-ts/): Algorithms implemented in TypeScript
+  - [`algo-py/`](contents/algo-py/): Algorithms implemented in Python
+  - [`algo-go/`](contents/algo-go/): Algorithms implemented in Go
 
 ## License
 

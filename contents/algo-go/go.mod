@@ -1,3 +1,3 @@
 module github.com/organiclever/learn-cs/contents/algo-go
 
-go 1.16
+go 1.18

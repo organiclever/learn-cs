@@ -33,6 +33,12 @@ Linear search is used when the list is not sorted or when the list is small. It 
 
 ## Performance
 
+Time Complexity: O(n)
+
 - Best Case: O(1) - The target is found at the first element.
 - Worst Case: O(n) - The target is found at the last element.
 - Average Case: O(n) - The target is found at the middle element.
+
+Space Complexity: O(1)
+
+- The algorithm uses a constant amount of additional space regardless of the size of the input list.

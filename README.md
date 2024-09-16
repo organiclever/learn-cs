@@ -29,17 +29,19 @@ To work with this project, you'll need the following installed on your system:
 - Rust and Cargo (for running Rust algorithms and tests)
 - cargo-watch (for watching file changes in the Rust project)
 - rustfmt (for formatting Rust code, usually comes with Rust toolchain)
+- gofmt (for formatting Go code, usually comes with Go installation)
 - entr (for watching file changes in the Go project)
 
 ### Setting up the project
 
 1. Install Volta if you haven't already: https://docs.volta.sh/guide/getting-started
 2. Install Rust and Cargo if you haven't already: https://www.rust-lang.org/tools/install
-3. Install cargo-watch: `cargo install cargo-watch`
-4. Install rustfmt (if not already installed): `rustup component add rustfmt`
-5. Clone this repository
-6. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
-7. Run `npm run install:all` to set up all subprojects
+3. Install Go if you haven't already: https://golang.org/doc/install
+4. Install cargo-watch: `cargo install cargo-watch`
+5. Install rustfmt (if not already installed): `rustup component add rustfmt`
+6. Clone this repository
+7. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
+8. Run `npm run install:all` to set up all subprojects
 
 ### Running tests
 
@@ -83,17 +85,19 @@ To work with this project, you'll need the following installed on your system:
 - Rust and Cargo (for running Rust algorithms and tests)
 - cargo-watch (for watching file changes in the Rust project)
 - rustfmt (for formatting Rust code, usually comes with Rust toolchain)
+- gofmt (for formatting Go code, usually comes with Go installation)
 - entr (for watching file changes in the Go project)
 
 ### Setting up the project
 
 1. Install Volta if you haven't already: https://docs.volta.sh/guide/getting-started
 2. Install Rust and Cargo if you haven't already: https://www.rust-lang.org/tools/install
-3. Install cargo-watch: `cargo install cargo-watch`
-4. Install rustfmt (if not already installed): `rustup component add rustfmt`
-5. Clone this repository
-6. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
-7. Run `npm run install:all` to set up all subprojects
+3. Install Go if you haven't already: https://golang.org/doc/install
+4. Install cargo-watch: `cargo install cargo-watch`
+5. Install rustfmt (if not already installed): `rustup component add rustfmt`
+6. Clone this repository
+7. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
+8. Run `npm run install:all` to set up all subprojects
 
 ### Running tests
 

@@ -19,6 +19,7 @@
     "algo-rust:test": "cd contents/algo-rust && cargo test",
     "algo-rust:test:watch": "cd contents/algo-rust && (find . -name '*.rs' | entr -c -s 'cargo test')",
     "format:rust": "find . -name '*.rs' -not -path '*/target/*' | xargs rustfmt",
+    "format:go": "find . -name '*.go' | xargs gofmt -w",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "husky:pre-push": "husky add .husky/pre-push 'npm test'"
@@ -34,7 +35,8 @@
   },
   "lint-staged": {
     "*.{ts,js,md,json}": "prettier --write",
-    "**/*.rs": "npm run format:rust"
+    "**/*.rs": "npm run format:rust",
+    "**/*.go": "npm run format:go"
   },
   "volta": {
     "node": "20.17.0",

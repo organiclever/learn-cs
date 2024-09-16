@@ -27,6 +27,7 @@ To work with this project, you'll need the following installed on your system:
 - Python 3.7+ (for running Python algorithms and tests)
 - Go 1.16+ (for running Go algorithms and tests)
 - Rust and Cargo (for running Rust algorithms and tests)
+- Java 17 (LTS) and Maven (for running Java algorithms and tests)
 - cargo-watch (for watching file changes in the Rust project)
 - rustfmt (for formatting Rust code, usually comes with Rust toolchain)
 - gofmt (for formatting Go code, usually comes with Go installation)
@@ -37,11 +38,13 @@ To work with this project, you'll need the following installed on your system:
 1. Install Volta if you haven't already: https://docs.volta.sh/guide/getting-started
 2. Install Rust and Cargo if you haven't already: https://www.rust-lang.org/tools/install
 3. Install Go if you haven't already: https://golang.org/doc/install
-4. Install cargo-watch: `cargo install cargo-watch`
-5. Install rustfmt (if not already installed): `rustup component add rustfmt`
-6. Clone this repository
-7. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
-8. Run `npm run install:all` to set up all subprojects
+4. Install Java 17 (LTS) if you haven't already: https://adoptium.net/
+5. Install Maven if you haven't already: https://maven.apache.org/install.html
+6. Install cargo-watch: `cargo install cargo-watch`
+7. Install rustfmt (if not already installed): `rustup component add rustfmt`
+8. Clone this repository
+9. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
+10. Run `npm run install:all` to set up all subprojects
 
 ### Running tests
 
@@ -64,9 +67,11 @@ This repository contains implementations of various algorithms in different prog
 
 ## Projects
 
-- [algo-go](./contents/algo-go/README.md): Algorithms implemented in Go
-- [algo-py](./contents/algo-py/README.md): Algorithms implemented in Python
-- [algo-rust](./contents/algo-rust/README.md): Algorithms implemented in Rust
+- algo-go: Go implementation
+- algo-rust: Rust implementation
+- algo-java: Java implementation
+- algo-py: Python implementation
+- algo-ts: TypeScript implementation
 
 ## Project Structure
 
@@ -74,6 +79,8 @@ This repository contains implementations of various algorithms in different prog
   - [`algo-ts/`](contents/algo-ts/): Algorithms implemented in TypeScript
   - [`algo-py/`](contents/algo-py/): Algorithms implemented in Python
   - [`algo-go/`](contents/algo-go/): Algorithms implemented in Go
+  - [`algo-rust/`](contents/algo-rust/): Algorithms implemented in Rust
+  - [`algo-java/`](contents/algo-java/): Algorithms implemented in Java
 
 ## Project Requirements
 
@@ -83,6 +90,7 @@ To work with this project, you'll need the following installed on your system:
 - Python 3.7+ (for running Python algorithms and tests)
 - Go 1.16+ (for running Go algorithms and tests)
 - Rust and Cargo (for running Rust algorithms and tests)
+- Java 17 (LTS) and Maven (for running Java algorithms and tests)
 - cargo-watch (for watching file changes in the Rust project)
 - rustfmt (for formatting Rust code, usually comes with Rust toolchain)
 - gofmt (for formatting Go code, usually comes with Go installation)
@@ -93,11 +101,13 @@ To work with this project, you'll need the following installed on your system:
 1. Install Volta if you haven't already: https://docs.volta.sh/guide/getting-started
 2. Install Rust and Cargo if you haven't already: https://www.rust-lang.org/tools/install
 3. Install Go if you haven't already: https://golang.org/doc/install
-4. Install cargo-watch: `cargo install cargo-watch`
-5. Install rustfmt (if not already installed): `rustup component add rustfmt`
-6. Clone this repository
-7. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
-8. Run `npm run install:all` to set up all subprojects
+4. Install Java 17 (LTS) if you haven't already: https://adoptium.net/
+5. Install Maven if you haven't already: https://maven.apache.org/install.html
+6. Install cargo-watch: `cargo install cargo-watch`
+7. Install rustfmt (if not already installed): `rustup component add rustfmt`
+8. Clone this repository
+9. Run `npm install` in the root directory to install Node.js dependencies (Volta will automatically use the correct Node.js and npm versions)
+10. Run `npm run install:all` to set up all subprojects
 
 ### Running tests
 

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:all",
-    "test:all": "concurrently \"npm run algo-ts:test\" \"npm run algo-py:test\" \"npm run algo-go:test\" \"npm run algo-rust:test\"",
-    "test:watch": "concurrently \"npm run algo-ts:test:watch\" \"npm run algo-py:test:watch\" \"npm run algo-go:test:watch\" \"npm run algo-rust:test:watch\"",
-    "install:all": "npm install && npm run install:algo-ts && npm run install:algo-py",
+    "test:all": "concurrently \"npm run algo-ts:test\" \"npm run algo-py:test\" \"npm run algo-go:test\" \"npm run algo-rust:test\" \"npm run algo-java:test\"",
+    "test:watch": "concurrently \"npm run algo-ts:test:watch\" \"npm run algo-py:test:watch\" \"npm run algo-go:test:watch\" \"npm run algo-rust:test:watch\" \"npm run algo-java:test:watch\"",
+    "install:all": "npm install && npm run algo-ts:install && npm run algo-py:install && npm run algo-java:install",
     "algo-ts:test": "cd contents/algo-ts && npm test",
     "algo-ts:test:watch": "cd contents/algo-ts && npm run test:watch",
     "algo-ts:install": "cd contents/algo-ts && npm install",
@@ -18,6 +18,9 @@
     "algo-go:test:watch": "cd contents/algo-go && (find . -name '*.go' | entr -c -s 'go test ./...')",
     "algo-rust:test": "cd contents/algo-rust && cargo test",
     "algo-rust:test:watch": "cd contents/algo-rust && (find . -name '*.rs' | entr -c -s 'cargo test')",
+    "algo-java:test": "cd contents/algo-java && mvn test",
+    "algo-java:test:watch": "nodemon --watch contents/algo-java/src --ext java --exec \"npm run algo-java:test\"",
+    "algo-java:install": "cd contents/algo-java && mvn install",
     "format:rust": "find . -name '*.rs' -not -path '*/target/*' | xargs rustfmt",
     "format:go": "find . -name '*.go' | xargs gofmt -w",
     "prepare": "husky install",
@@ -31,7 +34,8 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.0.0",
     "prettier": "^2.8.0",
-    "concurrently": "^8.0.1"
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
   },
   "lint-staged": {
     "*.{ts,js,md,json}": "prettier --write",

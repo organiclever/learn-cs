@@ -62,6 +62,14 @@ To work with this project, you'll need the following installed on your system:
 
 Note: The Go project's watch functionality requires `entr` to be installed on your system.
 
+## Prerequisites
+
+Before getting started, make sure you have all the necessary tools installed. You can check your system's readiness by running the doctor script:
+
+```bash
+npm run doctor
+```
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.

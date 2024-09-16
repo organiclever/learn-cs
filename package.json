@@ -33,7 +33,8 @@
     "reset:py": "rm -rf contents/algo-py/venv",
     "reset:java": "cd contents/algo-java && mvn clean",
     "reset:rust": "cd contents/algo-rust && cargo clean",
-    "reset:go": "go clean -cache -testcache -modcache"
+    "reset:go": "go clean -cache -testcache -modcache",
+    "doctor": "node doctor.js"
   },
   "author": "",
   "license": "MIT",

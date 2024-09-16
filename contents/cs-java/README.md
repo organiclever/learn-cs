@@ -1,4 +1,4 @@
-# Algo-Java
+# cs-java
 
 This is the Java implementation of algorithms for the Computer Science Concepts Learning Repository.
 
@@ -7,7 +7,7 @@ This is the Java implementation of algorithms for the Computer Science Concepts 
 The project follows the standard Maven directory structure:
 
 ```
-algo-java/
+cs-java/
 ├── src/
 │   ├── main/
 │   │   └── java/
@@ -33,9 +33,9 @@ algo-java/
 
 1. Ensure you have Java 17 and Maven installed on your system.
 2. Clone this repository.
-3. Navigate to the `algo-java` directory:
+3. Navigate to the `cs-java` directory:
    ```
-   cd contents/algo-java
+   cd contents/cs-java
    ```
 
 ## Running the Project

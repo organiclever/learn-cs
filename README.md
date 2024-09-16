@@ -15,11 +15,11 @@ This repository serves as a practical resource for anyone interested in learning
 ## Project Structure
 
 - [`contents/`](contents/): Contains subprojects for different topics
-  - [`algo-ts/`](contents/algo-ts/): Algorithms implemented in TypeScript
-  - [`algo-py/`](contents/algo-py/): Algorithms implemented in Python
-  - [`algo-go/`](contents/algo-go/): Algorithms implemented in Go
-  - [`algo-rust/`](contents/algo-rust/): Algorithms implemented in Rust
-  - [`algo-java/`](contents/algo-java/): Algorithms implemented in Java
+  - [`cs-ts/`](contents/cs-ts/): Algorithms implemented in TypeScript
+  - [`cs-py/`](contents/cs-py/): Algorithms implemented in Python
+  - [`cs-go/`](contents/cs-go/): Algorithms implemented in Go
+  - [`cs-rust/`](contents/cs-rust/): Algorithms implemented in Rust
+  - [`cs-java/`](contents/cs-java/): Algorithms implemented in Java
 
 ## Implemented Algorithms
 

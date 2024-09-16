@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/organiclever/learn-cs/contents/algo-go/pkg/algorithms"
+	"github.com/organiclever/learn-cs/contents/cs-go/pkg/algorithms"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-# Algo-Py
+# cs-py
 
 This project contains algorithms implemented in Python.
 

@@ -103,7 +103,7 @@ Temporary Items
 .apdisk
 
 # Python virtual environment
-contents/algo-py/venv/
+contents/cs-py/venv/
 
 # Java
 *.class

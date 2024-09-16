@@ -1,4 +1,4 @@
-# Algo-Go
+# cs-go
 
 This repository contains implementations of various algorithms in Go.
 
@@ -8,14 +8,14 @@ To run the algorithms:
 
 1. Ensure you have Go installed on your system.
 2. Clone this repository.
-3. Navigate to the `algo-go` directory.
-4. Run the desired algorithm using `go run cmd/algo-go/main.go`.
+3. Navigate to the `cs-go` directory.
+4. Run the desired algorithm using `go run cmd/cs-go/main.go`.
 
 ## Running Tests
 
 To run the tests:
 
-1. Navigate to the `algo-go` directory.
+1. Navigate to the `cs-go` directory.
 2. Run `go test ./...` to execute all tests.
 
 ## Available Algorithms

@@ -6,10 +6,10 @@ This project contains implementations of various algorithms in Rust.
 
 1. Make sure you have Rust installed. If not, you can install it from [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install).
 
-2. Navigate to the `algo-rust` directory:
+2. Navigate to the `cs-rust` directory:
 
    ```
-   cd contents/algo-rust
+   cd contents/cs-rust
    ```
 
 3. Build the project:

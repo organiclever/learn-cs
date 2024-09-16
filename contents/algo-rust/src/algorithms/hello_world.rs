@@ -2,6 +2,7 @@ pub fn hello_world() -> String {
     "Hello, World!".to_string()
 }
 
+// test format
 #[cfg(test)]
 mod tests {
     use super::*;

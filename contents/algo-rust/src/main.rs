@@ -1,5 +1,5 @@
-use algo_rust::algorithms::hello_world::hello_world;
+mod search;
 
 fn main() {
-    println!("{}", hello_world());
+    println!("Linear Search algorithm is implemented in the search module.");
 }

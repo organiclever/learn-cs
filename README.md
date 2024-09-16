@@ -13,3 +13,7 @@ This repository serves as a practical resource for anyone interested in learning
 - Programming Languages Cookbook
 
 ## Project Structure
+
+- `contents/`: Contains subprojects for different topics
+  - `algo-ts/`: Algorithms implemented in TypeScript
+  - `algo-py/`: Algorithms implemented in Python

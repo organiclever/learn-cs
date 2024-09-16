@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install:all": "npm install && cd contents/algo-ts && npm install",
+    "install:all": "npm install && cd contents/algo-ts && npm install && cd ../algo-py && python -m venv venv && . venv/bin/activate && pip install -r requirements.txt && deactivate",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },

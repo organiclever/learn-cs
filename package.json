@@ -34,7 +34,8 @@
     "reset:java": "cd contents/algo-java && mvn clean",
     "reset:rust": "cd contents/algo-rust && cargo clean",
     "reset:go": "go clean -cache -testcache -modcache",
-    "doctor": "node doctor.js"
+    "doctor": "node doctor.js",
+    "preinstall": "node doctor.js"
   },
   "author": "",
   "license": "MIT",

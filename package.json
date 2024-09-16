@@ -4,11 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:all": "npm install && cd contents/algo-ts && npm install",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.8.0"
+  },
+  "lint-staged": {
+    "*.{ts,js,md,json}": "prettier --write"
   }
 }

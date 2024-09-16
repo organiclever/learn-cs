@@ -1,0 +1,100 @@
+# Node.js / JavaScript / TypeScript
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.npm
+*.log
+*.pid
+*.seed
+*.pid.lock
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Clojure
+/target/
+/classes/
+/checkouts/
+profiles.clj
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+.lein-*
+.nrepl-port
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Operating System Files
+Thumbs.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# macOS Directories
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:all",
     "install:all": "npm install && cd contents/algo-ts && npm install && cd ../algo-py && python -m venv venv && . venv/bin/activate && pip install -r requirements.txt && deactivate",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "test:watch": "concurrently \"cd contents/algo-ts && npm run test:watch\" \"cd contents/algo-py && . venv/bin/activate && pytest-watch && deactivate\"",
+    "test:all": "concurrently \"cd contents/algo-ts && npm test\" \"cd contents/algo-py && . venv/bin/activate && pytest && deactivate\""
   },
   "author": "",
   "license": "MIT",
@@ -15,7 +17,8 @@
     "ts-node": "^10.9.2",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.0",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.0",
+    "concurrently": "^8.0.1"
   },
   "lint-staged": {
     "*.{ts,js,md,json}": "prettier --write"

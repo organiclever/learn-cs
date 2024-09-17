@@ -7,7 +7,7 @@
       (= (nth coll index) target) index
       :else (recur (inc index)))))
 
-(defn -main [& args]
+(defn -main []
   (let [arr [3 1 4 1 5 9 2 6 5 3 5]
         target 6]
     (println "Array:" arr)

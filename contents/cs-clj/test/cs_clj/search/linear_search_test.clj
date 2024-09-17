@@ -1,5 +1,5 @@
 (ns cs-clj.search.linear-search-test
-  (:require [clojure.test :refer :all]
+  (:require [clojure.test :refer [deftest is testing]]
             [cs-clj.search.linear-search :refer [linear-search]]))
 
 (deftest linear-search-test

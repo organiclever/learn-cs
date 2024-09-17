@@ -3,5 +3,5 @@
 (defn hello []
   (println "Hello, World!"))
 
-(defn -main [& args]
+(defn -main []
   (hello))
